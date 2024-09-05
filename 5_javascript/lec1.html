@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lect 1</title>
+</head>
+<body>
+    <!-- inline js -->
+    <button onclick="alert('hello JS')">Greet Js</button>
+    <button id='greet'>Prompt</button>
+    
+    <!-- internal js -->
+    <script type="text/javascript">
+        let x = .1;
+        console.log( x, typeof x);
+        x = "my name";
+        console.log( typeof x);
+        
+        const isWhat = true;
+        console.log( typeof isWhat);
+
+        // int array[] = {1, 2, 3, "dflkjg"};
+        const array = [1, 1.2, 345, "d", "hsoru npoauf"];
+        console.log(typeof array);
+
+        // struct person {
+        //     int age;
+        //     char[] name;
+        // };
+        const person = {
+            age: 18,
+            name: "ali"
+        }
+        console.log(person["name"]);
+
+    </script>
+
+    <!-- external js -->
+    <script src="./lec1.js"></script>
+</body>
+</html>

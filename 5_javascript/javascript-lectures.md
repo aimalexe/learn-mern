@@ -45,6 +45,7 @@ Before learning JavaScript, students should have:
     - [**Alert Box:**](#alert-box)
     - [**Document Write:**](#document-write)
     - [**Inner HTML:**](#inner-html)
+- [**Day 2: Introduction to Javascript (Cont..)**](#day-2-introduction-to-javascript-cont)
   - [**7. Operators in JavaScript**](#7-operators-in-javascript)
     - [**A. Arithmetic Operators:**](#a-arithmetic-operators)
       - [**Examples:**](#examples-1)
@@ -76,7 +77,7 @@ Before learning JavaScript, students should have:
         - [**Examples:**](#examples-7)
       - [**H. Dot Operator (`.`)**](#h-dot-operator-)
         - [**Example:**](#example-4)
-- [**Day 2: Control Flow in JavaScript**](#day-2-control-flow-in-javascript)
+- [**Day 3: Control Flow in JavaScript**](#day-3-control-flow-in-javascript)
   - [**1. Conditional Statements: `if`, `else if`, `else`**](#1-conditional-statements-if-else-if-else)
     - [**A. `if` Statement**](#a-if-statement)
       - [**Syntax:**](#syntax-1)
@@ -273,7 +274,7 @@ You can also use JavaScript to dynamically change the content of HTML elements u
 ```js
 document.getElementById("demo").innerHTML = "JavaScript is fun!";
 ```
-
+# **Day 2: Introduction to Javascript (Cont..)**
 ## **7. Operators in JavaScript**
 JavaScript has a rich set of operators for performing operations on data.
 
@@ -531,7 +532,7 @@ person.greet(); // Calls the "greet" method
 ```
 
 
-# **Day 2: Control Flow in JavaScript**
+# **Day 3: Control Flow in JavaScript**
 ## **1. Conditional Statements: `if`, `else if`, `else`**
 
 Conditional statements allow your code to make decisions based on certain conditions.
