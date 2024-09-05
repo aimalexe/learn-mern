@@ -1,0 +1,78 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Build directories
+/build
+/dist
+/.next
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# MongoDB data files
+/data/db/
+*.lock
+
+# Coverage directory used by testing frameworks
+/coverage
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Babel cache
+.cache/
+
+# Parcel-bundler cache
+.cache/
+
+# Webpack files
+/webpack-stats.json
+/webpack.config.js
+
+# Production build
+build/
+
+# npm package-lock
+package-lock.json
+yarn.lock
+
+# React Native
+.expo/
+
+# Miscellaneous
+*.swp
+*.swo
+
+# Heroku related
+/.profile
+/.env
+/.cache
+/.next/cache
+/.npm/_logs
+
+# Logs and debugging files
+debug.log
+error.log

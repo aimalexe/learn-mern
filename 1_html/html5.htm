@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Aimal Khan" content="This program is written by aimal.pk for teaching purposes" />
+    <title>HTML5 Semantic Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header,
+        nav,
+        section,
+        article,
+        aside,
+        footer {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        header,
+        footer {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section with a site title and navigation -->
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="#home" target="_blank" rel="noopener">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Article section -->
+        <article>
+            <header>
+                <!-- Article title and publication time -->
+                <h2>Understanding HTML5 Semantics</h2>
+                <time datetime="2024-07-23">July 23, 2024</time>
+            </header>
+
+            <section>
+                <h3>Introduction</h3>
+                <p>HTML5 introduced several semantic elements that help to define the structure of a web page.</p>
+            </section>
+
+            <section>
+                <h3>Examples of Semantic Elements</h3>
+                <dl>
+                    <!-- Definition list -->
+                    <dt><strong>header</strong></dt>
+                    <dd>The header of a section or page.</dd>
+
+                    <dt><strong>nav</strong></dt>
+                    <dd>The navigation links for a page.</dd>
+
+                    <dt><strong>main</strong></dt>
+                    <dd>The main content of the page.</dd>
+
+                    <dt><strong>aside</strong></dt>
+                    <dd>Content related to the main content.</dd>
+
+                    <dt><strong>section</strong></dt>
+                    <dd>A section of related content.</dd>
+
+                    <dt><strong>article</strong></dt>
+
+                    <dd>
+                        <pre>
+                            An independent piece of content.
+                        </pre>
+                    </dd>
+                </dl>
+            </section>
+
+            <!-- Code block -->
+            <section>
+                <h3>Sample Code</h3>
+                <pre>
+                    <code>
+                        &lt;header&gt;
+                        &lt;h1&gt;My Website&lt;/h1&gt;
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                        &lt;/header&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h3>Blockquote Example</h3>
+                <blockquote cite="https://www.example.com">
+                    HTML5 semantics make it easier to understand the structure and content of a web page.
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Citing a Source</h3>
+                <p>The quote above is taken from <cite>HTML5 Semantics Guide</cite>.</p>
+            </section>
+
+            <section>
+                <h3>Contact Information</h3>
+                <address>
+                    <!-- Address block -->
+                    Written by <a href="mailto:webmaster@example.com">John Doe</a>.<br>
+                    Visit us at:<br />
+                    Example.com<br>
+                    Box 564, Disneyland<br>
+                    USA
+                </address>
+            </section>
+
+            <section>
+                <h3>Abbreviations</h3>
+                <p>
+                    The abbreviation for HyperText Markup Language is
+                    <abbr title="HyperText Markup Lang">HTML</abbr>.
+                </p>
+            </section>
+
+            <section>
+                <h3>Subscript and Superscript</h3>
+                <p>H<sub>2</sub>O is the chemical formula for water.</p>
+                <p>10<sup>2</sup> is 100.</p>
+            </section>
+
+            <section>
+                <h3>Keyboard Input and Sample Output</h3>
+                <p>To save a file, press <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+                <p>The sample output is: <samp>Hello, World!</samp></p>
+            </section>
+
+            <section>
+                <h3>Variable and Time Elements</h3>
+                <p>The value of <var>x</var> is 5.</p>
+                <p>The event starts at <time datetime="2024-08-01T14:00">2:00 PM on August 1, 2024</time>.</p>
+            </section>
+
+            <!-- Multimedia Section -->
+            <section>
+                <h2>Multimedia Content</h2>
+
+                <!-- Embedded Video -->
+                <section>
+                    <h3>Embedded Video</h3>
+                    <video width="600" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+                <!-- Embedded Image -->
+                <section>
+                    <h3>Embedded Image</h3>
+                    <img src="https://media.licdn.com/dms/image/D4D12AQGcVZT_awEYIQ/article-cover_image-shrink_720_1280/0/1693733543186?e=2147483647&v=beta&t=-jQ3cPQeyufy9-pGac-uLCTicRFiTw_tZtCLZZpSGGQ"
+                        alt="Sample Image" width="600" />
+                </section>
+
+                <!-- Embedded SVG -->
+                <section>
+                    <h3>Embedded SVG</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg" alt="React Logo"
+                        width="200" />
+                </section>
+
+                <!-- Embedded Audio -->
+                <section>
+                    <h3>Embedded Audio</h3>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </section>
+
+                <!-- Embedded Iframe -->
+                <section>
+                    <h3>Embedded Iframe</h3>
+                    <iframe src="https://www.david-hckh.com/" width="600" height="400" style="border:none;">
+                        Your browser does not support iframes.
+                    </iframe>
+                </section>
+
+                <!-- Embedded YouTube Video -->
+                <section>
+                    <h3>Embedded YouTube Video</h3>
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </section>
+            </section>
+
+            <!-- Table Section to compare HTML5 elements -->
+            <section>
+                <h3>HTML5 Elements Comparison</h3>
+                <table border="10" cellspacing="0" cellpadding="8">
+                    <caption>Comparison of HTML5 Semantic Elements</caption>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                            <th>Example Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2"><code>&lt;header&gt;</code></td>
+                            <td>The header of a section or page</td>
+                            <td rowspan="2"><code>&lt;header&gt;...&lt;/header&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>Typically contains introductory content or navigation links</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;nav&gt;</code></td>
+                            <td colspan="2">Contains the navigation links for the website</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;main&gt;</code></td>
+                            <td>The main content of the page</td>
+                            <td><code>&lt;main&gt;...&lt;/main&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><code>&lt;aside&gt;</code></td>
+                            <td colspan="2">Holds content related to the main content</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Often used for sidebars</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><code>&lt;section&gt;</code></td>
+                            <td>Defines a section in a document</td>
+                            <td rowspan="2"><code>&lt;section&gt;...&lt;/section&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>Used for grouping related content</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;article&gt;</code></td>
+                            <td colspan="2">Defines an independent, self-contained content</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Form Section -->
+            <section id="contact">
+                <h3>Contact Form</h3>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea><br />
+
+                    <label for="rating">Rate our website:</label>
+                    <input type="range" id="rating" name="rating" min="1" max="5">
+
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </article>
+
+
+        <!-- Aside content -->
+        <aside>
+            <h3>Related Articles</h3>
+            <ol>
+                <li><a href="#html-basics">HTML Basics</a></li>
+                <li><a href="#css-basics">CSS Basics</a></li>
+                <li><a href="#javascript-basics">JavaScript Basics</a></li>
+            </ol>
+        </aside>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+
+</html>

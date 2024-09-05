@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zma HTML</title>
+	<style>
+		nav {
+			background-color: #f69898;
+		}
+		.container {
+			height: 60vh;
+			background-color: #ef6d6d;
+			display: flex;
+			flex-direction: row;
+			align-items: start;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+		}
+		.item:nth-of-type(2){
+			order: 4;
+			/* flex-grow: 2; */
+			align-self: flex-end;
+		}
+		ul {
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	
+	<nav>
+		<ul class="container">
+			<li class="item">Lorem.</li>
+			<li class="item">Molestias?</li>
+			<li class="item">Iure!</li>
+			<li class="item">Recusandae.</li>
+			<li class="item i5">Nesciunt?</li>
+		</ul>
+	</nav>
+
+</body>
+</html>

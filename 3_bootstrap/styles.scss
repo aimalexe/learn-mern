@@ -1,0 +1,28 @@
+$myVar : #adacac;
+
+nav {
+    border-bottom: 2px solid red;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li{
+            display: inline-block;
+            width: 30%;
+            height: 3ch;
+            text-align: center;
+            // padding: 1px 4px;
+            background-color: $myVar;
+            &:hover {
+                background-color: darken($myVar, 10%);
+                transform: scale(1.2);
+                border-bottom: darken($color: $myVar, $amount: 100%);
+            } 
+        }
+    }
+}
+
+

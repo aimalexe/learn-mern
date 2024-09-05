@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lecture 4</title>
+    <style media="screen and (max-width = 576px)">
+        /* style that are only loaded for mobile phones */
+    </style>
+    <link rel="stylesheet" href="" media="">
+    <style>
+        /* body {
+            background-color: yellow;
+        }
+        nav {
+            max-width: 1400px;
+            background-color: pink;
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-size: 32px;
+        }
+
+        @media (max-width: 576px){
+            body {
+                background-color: green;
+            }
+        }
+        @media print {
+            body {
+                background-color: rgb(203, 30, 59);
+            }
+            
+        } */
+
+        div {
+            width: 200px;
+            height: 200px;
+
+            background-color: aqua;
+            /* transition: background-color 1s ease-in 0.5s, width 1s ease 0.5s; */
+            /* transition: transform 1s ease 0s;
+            transform: rotate(360deg); */
+        }
+        
+        div:hover {
+            /* background-color: yellow;
+            width: 500px; */
+        }
+
+        .anim {
+            background-color: teal;
+            animation: myAnimation 2s ease-in-out 0.5s infinite normal forwards;
+        }
+        
+        @keyframes myAnimation {
+            /* from {
+                background-color: rgba(146, 239, 239, 0.594);
+                transform: rotate(0deg);
+                border-radius: 50%;
+                
+            } to {
+                background-color: rgb(3, 102, 102);
+                transform: rotate(360deg);
+                border-radius: 0%;
+
+            }          */
+            0%{
+                transform: rotate(30deg);
+            }
+            30%{
+                transform: rotate(-180deg);
+                
+            }
+            60%{
+                transform: rotate(90deg);
+                
+            }100%{
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <nav>
+        <ul>
+            <li>Lorem.</li>
+            <li>Unde?</li>
+            <li>Eos.</li>
+        </ul>
+    </nav> -->
+
+    <div>A Div</div>
+    <div class="anim">animation div</div>
+    
+</body>
+</html>

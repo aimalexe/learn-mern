@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Animation Makers</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: black;
+            /* Provides contrast */
+            margin: 0;
+        }
+
+        .equalizer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 300px;
+            width: 600px;
+            background-image: linear-gradient(to right, pink, green);
+            /* Apply gradient here */
+            border: 2px solid white;
+            overflow: hidden;
+        }
+
+        .bar {
+            flex: 1 1 2%;
+            height: 40%;
+            animation: dance 0.7s infinite;
+            background: transparent;
+            border: 30px solid white;
+            margin: 2px;
+        }
+
+        @keyframes dance {
+
+            0%,
+            100% {
+                transform: scaleY(0.5);
+            }
+
+            50% {
+                transform: scaleY(1.5);
+            }
+        }
+
+        .bar:nth-child(odd) {
+            animation-duration: 0.5s;
+        }
+
+        .bar:nth-child(even) {
+            animation-duration: 0.9s;
+        }
+
+        .bar:nth-child(2n+1) {
+            animation-duration: 1.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="equalizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+
+</html>
