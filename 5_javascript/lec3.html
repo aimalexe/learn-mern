@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3rd</title>
+</head>
+
+<body>
+    <h2>Lecture 3: </h2>
+    <h1>Control Flow in JS</h1>
+
+    <script type="text/javascript">
+        const age = 2 ;
+        const sex = "male"
+        if(age >= 60 && sex == 'male'){
+            console.log( "you are overage");
+        }
+        else if(age >= 22){
+            console.log("yes eligible")
+        }
+        else {
+            console.log("you are underage");
+        }
+
+        console.log("print at last");
+        // other statements
+
+        // switch 
+        const dayNumber = 1;
+        switch(dayNumber){
+            case 1: 
+                console.log("Mon");
+                break;
+
+            case 2: console.log("Tue")
+                    break;
+
+            default:
+                console.log("Invalid")
+        }
+
+        const grade = "a";
+        const promotion = grade === 'a' ? "pass" : "fail";
+        // let promotion;
+        // if (grade === 'a')
+        //     promotion = "pass";
+        // else
+        //     promotion = 'fail';
+
+        console.log(promotion);
+
+        for(let i = 0; i < 1000; i++){
+            console.log("2 x %s = %s", i, 2 * i);
+        }
+        
+        let i = 0;
+        while(i < 10){
+                console.log("2 x %s = %s", i, 2 * i);
+                i++;
+        }
+    </script>
+</body>
+
+</html>

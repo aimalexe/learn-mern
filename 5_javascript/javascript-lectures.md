@@ -95,16 +95,17 @@ Before learning JavaScript, students should have:
     - [**A. `for` Loop**](#a-for-loop)
       - [**Syntax:**](#syntax-4)
       - [**Example:**](#example-9)
-    - [**B. `for...of` Loop**](#b-forof-loop)
+    - [**B. `while` Loop**](#b-while-loop)
       - [**Syntax:**](#syntax-5)
       - [**Example:**](#example-10)
-    - [**C. `for...in` Loop**](#c-forin-loop)
+    - [**C. `do...while` Loop**](#c-dowhile-loop)
       - [**Syntax:**](#syntax-6)
       - [**Example:**](#example-11)
-    - [**D. `while` Loop**](#d-while-loop)
+- [**Day 4. Control flow in Javascript (Cont..)**](#day-4-control-flow-in-javascript-cont)
+    - [**D. `for...of` Loop**](#d-forof-loop)
       - [**Syntax:**](#syntax-7)
       - [**Example:**](#example-12)
-    - [**E. `do...while` Loop**](#e-dowhile-loop)
+    - [**E. `for...in` Loop**](#e-forin-loop)
       - [**Syntax:**](#syntax-8)
       - [**Example:**](#example-13)
   - [**4. Control Statements: `break` and `continue`**](#4-control-statements-break-and-continue)
@@ -655,46 +656,7 @@ for (let i = 0; i < 5; i++) {
 }
 // Outputs: 0, 1, 2, 3, 4
 ```
-
-### **B. `for...of` Loop**
-The `for...of` loop iterates over iterable objects (arrays, strings, etc.).
-
-#### **Syntax:**
-```js
-for (element of iterable) {
-  // Code to be executed for each element
-}
-```
-
-#### **Example:**
-```js
-let colors = ["red", "green", "blue"];
-for (let color of colors) {
-  console.log(color);
-}
-// Outputs: red, green, blue
-```
-
-### **C. `for...in` Loop**
-The `for...in` loop iterates over the keys of an object or the indices of an array.
-
-#### **Syntax:**
-```js
-for (key in object) {
-  // Code to be executed for each key
-}
-```
-
-#### **Example:**
-```js
-let person = { name: "Alice", age: 25, city: "New York" };
-for (let key in person) {
-  console.log(`${key}: ${person[key]}`);
-}
-// Outputs: name: Alice, age: 25, city: New York
-```
-
-### **D. `while` Loop**
+### **B. `while` Loop**
 The `while` loop executes as long as a specified condition is true.
 
 #### **Syntax:**
@@ -714,7 +676,7 @@ while (i < 5) {
 // Outputs: 0, 1, 2, 3, 4
 ```
 
-### **E. `do...while` Loop**
+### **C. `do...while` Loop**
 The `do...while` loop is similar to the `while` loop, but the block of code is executed **at least once** before checking the condition.
 
 #### **Syntax:**
@@ -733,6 +695,46 @@ do {
 } while (i < 5);
 // Outputs: 0, 1, 2, 3, 4
 ```
+
+# **Day 4. Control flow in Javascript (Cont..)**
+### **D. `for...of` Loop**
+The `for...of` loop iterates over iterable objects (arrays, strings, etc.).
+
+#### **Syntax:**
+```js
+for (element of iterable) {
+  // Code to be executed for each element
+}
+```
+
+#### **Example:**
+```js
+let colors = ["red", "green", "blue"];
+for (let color of colors) {
+  console.log(color);
+}
+// Outputs: red, green, blue
+```
+
+### **E. `for...in` Loop**
+The `for...in` loop iterates over the keys of an object or the indices of an array.
+
+#### **Syntax:**
+```js
+for (key in object) {
+  // Code to be executed for each key
+}
+```
+
+#### **Example:**
+```js
+let person = { name: "Alice", age: 25, city: "New York" };
+for (let key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+// Outputs: name: Alice, age: 25, city: New York
+```
+
 
 ## **4. Control Statements: `break` and `continue`**
 
