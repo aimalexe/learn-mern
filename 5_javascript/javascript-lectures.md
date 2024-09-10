@@ -131,6 +131,225 @@ Before learning JavaScript, students should have:
     - [**C. `throw` Statement**](#c-throw-statement)
       - [**Syntax:**](#syntax-12)
       - [**Example:**](#example-20)
+- [**Day -: Functions in JavaScript**](#day---functions-in-javascript)
+  - [**1. Function Declarations**](#1-function-declarations)
+    - [**Syntax:**](#syntax-13)
+    - [**Example:**](#example-21)
+    - [**Characteristics:**](#characteristics)
+  - [**2. Function Expressions**](#2-function-expressions)
+    - [**Syntax:**](#syntax-14)
+    - [**Example:**](#example-22)
+    - [**Differences from Declarations:**](#differences-from-declarations)
+  - [**3. Arrow Functions**](#3-arrow-functions)
+    - [**Syntax:**](#syntax-15)
+    - [**Example:**](#example-23)
+    - [**Key Points:**](#key-points)
+  - [**4. Using `Function()` Constructor**](#4-using-function-constructor)
+        - [**Syntax:**](#syntax-16)
+  - [**5. Parameters**](#5-parameters)
+      - [**Rest Parameters**](#rest-parameters)
+        - [**Syntax:**](#syntax-17)
+        - [**Example:**](#example-24)
+  - [**6. Return Values**](#6-return-values)
+      - [**Example:**](#example-25)
+  - [**7. Default Parameters**](#7-default-parameters)
+        - [**Syntax:**](#syntax-18)
+        - [**Example:**](#example-26)
+  - [**8. Immediate Invoked Function Expressions (IIFE)**](#8-immediate-invoked-function-expressions-iife)
+    - [**Syntax:**](#syntax-19)
+    - [**Example:**](#example-27)
+    - [**Uses:**](#uses)
+  - [**9. Generator Functions**](#9-generator-functions)
+    - [**Syntax:**](#syntax-20)
+    - [**Example:**](#example-28)
+    - [**Uses:**](#uses-1)
+  - [**10. Async Functions**](#10-async-functions)
+    - [**Syntax:**](#syntax-21)
+    - [**Example:**](#example-29)
+    - [**Key Points:**](#key-points-1)
+  - [**11. Higher-Order Functions**](#11-higher-order-functions)
+    - [**Syntax:**](#syntax-22)
+    - [**Example:**](#example-30)
+    - [**Uses:**](#uses-2)
+  - [**12. Arrow Functions and `this` Binding**](#12-arrow-functions-and-this-binding)
+        - [**Example:**](#example-31)
+- [**Data Types in JavaScript: Numbers**](#data-types-in-javascript-numbers)
+  - [**1. Overview of Number Data Type**](#1-overview-of-number-data-type)
+    - [**Key Points:**](#key-points-2)
+    - [**Examples of Number Declarations:**](#examples-of-number-declarations)
+  - [**2. Special Numeric Values**](#2-special-numeric-values)
+    - [**Infinity**](#infinity)
+      - [**Syntax \& Example:**](#syntax--example)
+    - [**NaN**](#nan)
+      - [**Syntax \& Example:**](#syntax--example-1)
+  - [**3. Methods of Number**](#3-methods-of-number)
+    - [**Number.parseInt()**](#numberparseint)
+      - [**Syntax \& Example:**](#syntax--example-2)
+    - [**Number.parseFloat()**](#numberparsefloat)
+      - [**Syntax \& Example:**](#syntax--example-3)
+    - [**Number.isFinite()**](#numberisfinite)
+      - [**Syntax \& Example:**](#syntax--example-4)
+    - [**Number.isNaN()**](#numberisnan)
+      - [**Syntax \& Example:**](#syntax--example-5)
+    - [**Number.isInteger()**](#numberisinteger)
+      - [**Syntax \& Example:**](#syntax--example-6)
+  - [**4. Arithmetic Operations**](#4-arithmetic-operations)
+    - [**Examples:**](#examples-8)
+    - [**Handling Floating-Point Precision Issues:**](#handling-floating-point-precision-issues)
+    - [**Modulus Operation:**](#modulus-operation)
+      - [**Example:**](#example-32)
+  - [**5. Real-World Scenarios**](#5-real-world-scenarios)
+- [**Data Types in JavaScript: Booleans**](#data-types-in-javascript-booleans)
+  - [**1. Overview of Boolean Data Type**](#1-overview-of-boolean-data-type)
+    - [**Key Points:**](#key-points-3)
+  - [**2. Conversion to Boolean**](#2-conversion-to-boolean)
+    - [**Explicit Conversion Using `Boolean()` Function:**](#explicit-conversion-using-boolean-function)
+      - [**Syntax \& Example:**](#syntax--example-7)
+  - [**3. Boolean Operations**](#3-boolean-operations)
+    - [**Logical Operators:**](#logical-operators)
+      - [**Examples:**](#examples-9)
+    - [**Short-Circuit Evaluation:**](#short-circuit-evaluation)
+      - [**Real-World Use:**](#real-world-use)
+  - [**4. Comparisons**](#4-comparisons)
+      - [**Examples:**](#examples-10)
+  - [**5. Real-World Scenarios**](#5-real-world-scenarios-1)
+- [**Data Types in JavaScript: Strings**](#data-types-in-javascript-strings)
+  - [**1. Overview of String Data Type**](#1-overview-of-string-data-type)
+    - [**Key Points:**](#key-points-4)
+    - [**Example of Creating Strings:**](#example-of-creating-strings)
+  - [**2. Common String Methods**](#2-common-string-methods)
+    - [**charAt()**](#charat)
+      - [**Syntax \& Example:**](#syntax--example-8)
+    - [**concat()**](#concat)
+      - [**Syntax \& Example:**](#syntax--example-9)
+    - [**includes()**](#includes)
+      - [**Syntax \& Example:**](#syntax--example-10)
+    - [**indexOf()**](#indexof)
+      - [**Syntax \& Example:**](#syntax--example-11)
+    - [**lastIndexOf()**](#lastindexof)
+      - [**Syntax \& Example:**](#syntax--example-12)
+    - [**match()**](#match)
+      - [**Syntax \& Example:**](#syntax--example-13)
+    - [**repeat()**](#repeat)
+      - [**Syntax \& Example:**](#syntax--example-14)
+    - [**replace()**](#replace)
+      - [**Syntax \& Example:**](#syntax--example-15)
+    - [**search()**](#search)
+      - [**Syntax \& Example:**](#syntax--example-16)
+    - [**slice()**](#slice)
+      - [**Syntax \& Example:**](#syntax--example-17)
+    - [**split()**](#split)
+      - [**Syntax \& Example:**](#syntax--example-18)
+    - [**substring()**](#substring)
+      - [**Syntax \& Example:**](#syntax--example-19)
+    - [**toLowerCase()**](#tolowercase)
+      - [**Syntax \& Example:**](#syntax--example-20)
+    - [**toUpperCase()**](#touppercase)
+      - [**Syntax \& Example:**](#syntax--example-21)
+    - [**trim()**](#trim)
+      - [**Syntax \& Example:**](#syntax--example-22)
+    - [**valueOf()**](#valueof)
+      - [**Syntax \& Example:**](#syntax--example-23)
+  - [**3. Real-World Scenarios for Using String Methods**](#3-real-world-scenarios-for-using-string-methods)
+- [**Data Types in JavaScript: Arrays**](#data-types-in-javascript-arrays)
+  - [**1. Overview of Array Data Type**](#1-overview-of-array-data-type)
+    - [**Key Points:**](#key-points-5)
+    - [**Example of Creating Arrays:**](#example-of-creating-arrays)
+  - [**2. Common Array Methods**](#2-common-array-methods)
+    - [**concat()**](#concat-1)
+      - [**Syntax \& Example:**](#syntax--example-24)
+    - [**every()**](#every)
+      - [**Syntax \& Example:**](#syntax--example-25)
+    - [**filter()**](#filter)
+      - [**Syntax \& Example:**](#syntax--example-26)
+    - [**find()**](#find)
+      - [**Syntax \& Example:**](#syntax--example-27)
+    - [**forEach()**](#foreach)
+      - [**Syntax \& Example:**](#syntax--example-28)
+    - [**indexOf()**](#indexof-1)
+      - [**Syntax \& Example:**](#syntax--example-29)
+    - [**join()**](#join)
+      - [**Syntax \& Example:**](#syntax--example-30)
+    - [**map()**](#map)
+      - [**Syntax \& Example:**](#syntax--example-31)
+    - [**pop()**](#pop)
+      - [**Syntax \& Example:**](#syntax--example-32)
+    - [**push()**](#push)
+      - [**Syntax \& Example:**](#syntax--example-33)
+    - [**reduce()**](#reduce)
+      - [**Syntax \& Example:**](#syntax--example-34)
+    - [**reverse()**](#reverse)
+      - [**Syntax \& Example:**](#syntax--example-35)
+    - [**slice()**](#slice-1)
+      - [**Syntax \& Example:**](#syntax--example-36)
+    - [**sort()**](#sort)
+      - [**Syntax \& Example:**](#syntax--example-37)
+    - [**splice()**](#splice)
+      - [**Syntax \& Example:**](#syntax--example-38)
+    - [**unshift()**](#unshift)
+      - [**Syntax \& Example:**](#syntax--example-39)
+  - [**3. Real-World Scenarios for Using Array Methods**](#3-real-world-scenarios-for-using-array-methods)
+- [**Data Types in JavaScript: Objects**](#data-types-in-javascript-objects)
+  - [**1. Overview of Object Data Type**](#1-overview-of-object-data-type)
+    - [**Key Points:**](#key-points-6)
+    - [**Example of Creating an Object:**](#example-of-creating-an-object)
+  - [**2. Common Object Methods**](#2-common-object-methods)
+    - [**Object.keys()**](#objectkeys)
+      - [**Syntax \& Example:**](#syntax--example-40)
+    - [**Object.values()**](#objectvalues)
+      - [**Syntax \& Example:**](#syntax--example-41)
+    - [**Object.entries()**](#objectentries)
+      - [**Syntax \& Example:**](#syntax--example-42)
+    - [**Object.assign()**](#objectassign)
+      - [**Syntax \& Example:**](#syntax--example-43)
+    - [**Object.freeze()**](#objectfreeze)
+      - [**Syntax \& Example:**](#syntax--example-44)
+    - [**Object.seal()**](#objectseal)
+      - [**Syntax \& Example:**](#syntax--example-45)
+    - [**Object.hasOwnProperty()**](#objecthasownproperty)
+      - [**Syntax \& Example:**](#syntax--example-46)
+  - [**3. Accessing Properties**](#3-accessing-properties)
+    - [**Dot Notation:**](#dot-notation)
+    - [**Bracket Notation:**](#bracket-notation)
+  - [**4. Real-World Scenarios for Using Objects**](#4-real-world-scenarios-for-using-objects)
+- [**Data Types in JavaScript: Dates**](#data-types-in-javascript-dates)
+  - [**1. Overview of Date Data Type**](#1-overview-of-date-data-type)
+    - [**Key Points:**](#key-points-7)
+    - [**Example of Creating Dates:**](#example-of-creating-dates)
+  - [**2. Common Date Methods**](#2-common-date-methods)
+    - [**getDate() / setDate()**](#getdate--setdate)
+      - [**Syntax \& Example:**](#syntax--example-47)
+    - [**getMonth() / setMonth()**](#getmonth--setmonth)
+      - [**Syntax \& Example:**](#syntax--example-48)
+    - [**getFullYear() / setFullYear()**](#getfullyear--setfullyear)
+      - [**Syntax \& Example:**](#syntax--example-49)
+    - [**getHours() / setHours()**](#gethours--sethours)
+      - [**Syntax \& Example:**](#syntax--example-50)
+    - [**getTime() / setTime()**](#gettime--settime)
+      - [**Syntax \& Example:**](#syntax--example-51)
+    - [**getDay()**](#getday)
+      - [**Syntax \& Example:**](#syntax--example-52)
+    - [**toLocaleString()**](#tolocalestring)
+      - [**Syntax \& Example:**](#syntax--example-53)
+    - [**toUTCString()**](#toutcstring)
+      - [**Syntax \& Example:**](#syntax--example-54)
+    - [**getTimezoneOffset()**](#gettimezoneoffset)
+      - [**Syntax \& Example:**](#syntax--example-55)
+  - [**3. Real-World Scenarios for Using Dates**](#3-real-world-scenarios-for-using-dates)
+  - [**4. Advanced Date Manipulation**](#4-advanced-date-manipulation)
+- [**Other Essential Data Types in JavaScript**](#other-essential-data-types-in-javascript)
+  - [**1. Set**](#1-set)
+    - [**Key Points:**](#key-points-8)
+    - [**Example of Using Set:**](#example-of-using-set)
+  - [**2. Map**](#2-map)
+    - [**Key Points:**](#key-points-9)
+    - [**Example of Using Map:**](#example-of-using-map)
+  - [**3. Symbol**](#3-symbol)
+    - [**Key Points:**](#key-points-10)
+    - [**Example of Using Symbol:**](#example-of-using-symbol)
+  - [**4. Regular Expressions (Regex)**](#4-regular-expressions-regex)
+    - [**Key Points:**](#key-points-11)
+    - [**Example of Using Regex:**](#example-of-using-regex)
 
 # **Day 1: Introduction to JavaScript**
 ## **1. JavaScript in the Browser**
@@ -870,3 +1089,1128 @@ try {
 }
 // Outputs: Age cannot be negative.
 ```
+
+
+# **Day -: Functions in JavaScript**
+
+In JavaScript, functions are one of the most important and versatile features, allowing code to be organized into reusable blocks. This lecture will cover all types of functions, their syntax, use cases, and nuances.
+
+## **1. Function Declarations**
+
+A function declaration defines a function with the specified parameters.
+
+### **Syntax:**
+```js
+function functionName(parameters) {
+  // Code to be executed
+}
+```
+
+### **Example:**
+```js
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet('Alice');  // Outputs: Hello, Alice!
+```
+
+### **Characteristics:**
+- Function declarations are hoisted, meaning they can be called before they are defined in the code.
+
+## **2. Function Expressions**
+
+A function expression can be stored in a variable. The function can be anonymous (without a name) or named.
+
+### **Syntax:**
+```js
+const functionName = function(parameters) {
+  // Code to be executed
+};
+```
+
+### **Example:**
+```js
+const square = function(number) {
+  return number * number;
+};
+console.log(square(4));  // Outputs: 16
+```
+
+### **Differences from Declarations:**
+- Function expressions are not hoisted. You must define them before you use them.
+
+## **3. Arrow Functions**
+Introduced in ES6, arrow functions offer a more concise syntax for writing function expressions.
+### **Syntax:**
+```js
+const functionName = (parameters) => {
+  // Code to be executed
+};
+```
+
+### **Example:**
+```js
+const add = (a, b) => a + b;
+console.log(add(5, 3));  // Outputs: 8
+```
+
+### **Key Points:**
+- Arrow functions do not have their own `this` context; they inherit it from the enclosing execution context.
+
+## **4. Using `Function()` Constructor**
+
+You can dynamically create new function objects with the `Function` constructor, but this method is not commonly recommended due to security risks similar to `eval()`.
+
+##### **Syntax:**
+```js
+const sum = new Function('a', 'b', 'return a + b');
+console.log(sum(2, 6));  // Outputs: 8
+```
+
+## **5. Parameters**
+
+Parameters are the variables listed as part of the function definition. JavaScript is dynamically typed, so parameters can receive values of any type.
+
+#### **Rest Parameters**
+Allows you to represent an indefinite number of arguments as an array.
+
+##### **Syntax:**
+```js
+function functionName(...params) {
+  // params is an array of all passed arguments
+}
+```
+
+##### **Example:**
+```js
+function sum(...numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+console.log(sum(1, 2, 3));  // Outputs: 6
+```
+
+## **6. Return Values**
+
+Functions can return values using the `return` statement. If no return is specified, the function returns `undefined`.
+
+#### **Example:**
+```js
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(2, 3));  // Outputs: 6
+```
+
+## **7. Default Parameters**
+
+Default parameters allow named parameters to be initialized with default values if no value or `undefined` is passed.
+
+##### **Syntax:**
+```js
+function functionName(param1 = defaultValue1, param2 = defaultValue2) {
+  // Function body
+}
+```
+
+##### **Example:**
+```js
+function greet(name = "Guest") {
+  console.log("Hello, " + name);
+}
+greet();  // Outputs: Hello, Guest
+greet("Alice");  // Outputs: Hello, Alice
+```
+
+
+## **8. Immediate Invoked Function Expressions (IIFE)**
+
+IIFEs are functions that run as soon as they are defined.
+
+### **Syntax:**
+```js
+(function() {
+  // Code to be executed
+})();
+```
+
+### **Example:**
+```js
+(function(name) {
+  console.log("Hello, " + name);
+})('John');  // Outputs: Hello, John
+```
+
+### **Uses:**
+- IIFEs are useful for creating private scopes and avoiding variable hoisting issues.
+
+
+
+## **9. Generator Functions**
+
+Generator functions can return multiple values over time, pausing execution between each yield.
+
+### **Syntax:**
+```js
+function* functionName(parameters) {
+  yield value;
+}
+```
+
+### **Example:**
+```js
+function* idGenerator() {
+  let id = 1;
+  while(true) {
+    yield id++;
+  }
+}
+
+const gen = idGenerator();
+console.log(gen.next().value);  // Outputs: 1
+console.log(gen.next().value);  // Outputs: 2
+```
+
+### **Uses:**
+- Generators are great for managing stateful iterations and asynchronous workflows.
+
+## **10. Async Functions**
+
+Async functions enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need for explicit promise chains.
+
+### **Syntax:**
+```js
+async function functionName(parameters) {
+  return value;
+}
+```
+
+### **Example:**
+```js
+async function fetchData() {
+  const response = await fetch('https://api.example.com');
+  const data = await response.json();
+  console.log(data);
+}
+
+fetchData();
+```
+
+### **Key Points:**
+- Async functions always return a promise.
+- The `await` keyword pauses the function execution until a promise is resolved.
+
+## **11. Higher-Order Functions**
+
+Higher-order functions are functions that operate on other functions, either by taking them as arguments or by returning them.
+
+### **Syntax:**
+```js
+function higherOrderFunction(callback) {
+  callback();
+}
+```
+
+### **Example:**
+```js
+function greet() {
+  console.log("Hello World!");
+}
+
+higherOrderFunction(greet);  // Outputs: Hello World!
+```
+
+### **Uses:**
+- Common in functional programming, they're used extensively for event handling, array manipulations, and asynchronous operations.
+
+## **12. Arrow Functions and `this` Binding**
+
+Arrow functions do not have their own `this` context; instead, they inherit it from the surrounding scope, which is a useful feature when working with methods that require a context that refers to the object.
+
+##### **Example:**
+```js
+const person = {
+  name: 'Alice',
+  actions: ['walk', 'run', 'speak'],
+  showActions() {
+    this.actions.forEach(action => {
+      console.log(this.name + " can " + action);
+    });
+  }
+};
+
+person.showActions();
+```
+
+# **Data Types in JavaScript: Numbers**
+
+JavaScript provides a flexible and powerful way to work with numerical data through its `Number` data type. This includes integers, floating-point numbers, and even special numeric values like `Infinity` and `NaN` (Not-a-Number).
+
+## **1. Overview of Number Data Type**
+
+In JavaScript, all numbers are represented as double-precision 64-bit binary format IEEE 754 values, which includes both integers and decimals.
+
+### **Key Points:**
+- JavaScript does not differentiate between types of numbers, whether they are integer or floating-point.
+- You can represent numbers in decimal, hexadecimal, octal, or binary format.
+
+### **Examples of Number Declarations:**
+```js
+let decimal = 100;
+let floatingPoint = 99.99;
+let hexadecimal = 0xff;  // 255 in decimal
+let octal = 0o377;       // 255 in decimal
+let binary = 0b11111111; // 255 in decimal
+```
+
+## **2. Special Numeric Values**
+
+### **Infinity**
+Represents mathematical Infinity, is greater than any other number.
+
+#### **Syntax & Example:**
+```js
+console.log(1 / 0);  // Outputs: Infinity
+console.log(Infinity + 100);  // Outputs: Infinity
+```
+
+### **NaN**
+Stands for "Not a Number", is a special value that results from an undefined or erroneous arithmetic operation.
+
+#### **Syntax & Example:**
+```js
+console.log("abc" * 10);  // Outputs: NaN
+```
+
+## **3. Methods of Number**
+
+### **Number.parseInt()**
+Converts a string to an integer.
+
+#### **Syntax & Example:**
+```js
+console.log(Number.parseInt("10"));  // Outputs: 10
+console.log(Number.parseInt("10.5"));  // Outputs: 10
+console.log(Number.parseInt("10abc"));  // Outputs: 10
+```
+
+### **Number.parseFloat()**
+Converts a string to a floating-point number.
+
+#### **Syntax & Example:**
+```js
+console.log(Number.parseFloat("10"));  // Outputs: 10
+console.log(Number.parseFloat("10.5"));  // Outputs: 10.5
+console.log(Number.parseFloat("10.5abc"));  // Outputs: 10.5
+```
+
+### **Number.isFinite()**
+Checks if the value is a finite number.
+
+#### **Syntax & Example:**
+```js
+console.log(Number.isFinite(Infinity));  // Outputs: false
+console.log(Number.isFinite(-Infinity));  // Outputs: false
+console.log(Number.isFinite(10));  // Outputs: true
+```
+
+### **Number.isNaN()**
+Checks if the value is NaN.
+
+#### **Syntax & Example:**
+```js
+console.log(Number.isNaN(NaN));  // Outputs: true
+console.log(Number.isNaN("NaN"));  // Outputs: false
+console.log(Number.isNaN(10));  // Outputs: false
+```
+
+### **Number.isInteger()**
+Determines whether the passed value is an integer.
+
+#### **Syntax & Example:**
+```js
+console.log(Number.isInteger(10));  // Outputs: true
+console.log(Number.isInteger(10.5));  // Outputs: false
+```
+
+## **4. Arithmetic Operations**
+
+You can perform all standard arithmetic operations like addition, subtraction, multiplication, and division.
+
+### **Examples:**
+```js
+let sum = 10 + 5;  // 15
+let difference = 10 - 5;  // 5
+let product = 10 * 5;  // 50
+let quotient = 10 / 5;  // 2
+```
+
+### **Handling Floating-Point Precision Issues:**
+```js
+let result = 0.1 + 0.2;  // Ideally should be 0.3, but due to precision issues, it isn't
+console.log(result.toFixed(2));  // Outputs: 0.30, fixes the precision
+```
+
+### **Modulus Operation:**
+Used for finding the remainder of a division operation, useful in scenarios like checking even or odd numbers.
+
+#### **Example:**
+```js
+let remainder = 5 % 2;  // Outputs: 1
+```
+
+## **5. Real-World Scenarios**
+
+- **Calculating Total Costs:** When calculating the total costs in an eCommerce cart.
+- **Financial Calculations:** Interest rates, loan repayments.
+- **Game Development:** Scoring systems, physics calculations.
+- **Data Analysis:** Statistical calculations, conversions.
+
+Numbers in JavaScript are straightforward yet powerful, allowing for a wide range of mathematical computations essential for daily programming tasks.
+
+# **Data Types in JavaScript: Booleans**
+
+In JavaScript, the `Boolean` data type is a primitive type that can hold one of two values: `true` or `false`. This binary nature makes Booleans extremely useful in controlling program flow and making logical decisions.
+
+## **1. Overview of Boolean Data Type**
+
+Booleans are fundamental in any programming language, serving as the building blocks for conditional statements and loops, enabling actions based on logical conditions.
+
+### **Key Points:**
+- Booleans represent a logical entity and can have only two values: `true` and `false`.
+- They are often the result of comparisons and used to control conditional logic.
+
+## **2. Conversion to Boolean**
+
+JavaScript uses type coercion in logical contexts, converting values to a Boolean according to the following rules:
+
+- **Truthy values:** These are values that convert to `true`. In JavaScript, any value that's not explicitly considered "falsy" is "truthy".
+- **Falsy values:** These are values that convert to `false`. The list includes `0`, `-0`, `null`, `false`, `NaN`, `undefined`, and the empty string `""`.
+
+### **Explicit Conversion Using `Boolean()` Function:**
+
+#### **Syntax & Example:**
+```js
+console.log(Boolean(1));  // true
+console.log(Boolean(0));  // false
+console.log(Boolean("Hello"));  // true
+console.log(Boolean(""));  // false
+```
+
+## **3. Boolean Operations**
+
+### **Logical Operators:**
+- **AND (`&&`)**: Returns `true` if both operands are true; otherwise, returns `false`.
+- **OR (`||`)**: Returns `true` if at least one of the operands is true.
+- **NOT (`!`)**: Returns `true` if the operand is false; `false` if the operand is true.
+
+#### **Examples:**
+```js
+console.log(true && false);  // false
+console.log(true || false);  // true
+console.log(!true);  // false
+```
+
+### **Short-Circuit Evaluation:**
+- **AND (`&&`)**: Evaluates operands from left to right, returning the first falsy value or the last value if no falsy value is found.
+- **OR (`||`)**: Evaluates operands from left to right, returning the first truthy value or the last value if no truthy value is found.
+
+#### **Real-World Use:**
+```js
+const access = (userHasAccess && userNotExpired);  // Determine if user can access a resource
+const greeting = user.name || "Guest";  // Default to "Guest" if user.name is falsy
+```
+
+## **4. Comparisons**
+Booleans are often the result of comparisons:
+- **Equality (`==` vs `===`)**: `==` performs type coercion, `===` does not.
+- **Relational Operators**: `<`, `>`, `<=`, `>=`.
+
+#### **Examples:**
+```js
+console.log(10 > 5);  // true
+console.log(10 === '10');  // false
+console.log(10 == '10');  // true
+```
+
+## **5. Real-World Scenarios**
+- **Conditional Rendering:** In web development, particularly in frameworks like React, conditional rendering uses booleans to determine which components to display.
+- **Feature Toggling:** Managing feature availability in applications based on boolean flags.
+- **Access Control:** Determining if a user's actions are permissible based on boolean checks.
+- **Form Validations:** Ensuring data entered in forms meets certain criteria before submission.
+
+Booleans, with their simplicity, play a crucial role in control structures and decisions in JavaScript, making them an indispensable part of programming logic.
+
+
+# **Data Types in JavaScript: Strings**
+
+Strings in JavaScript are used to represent text data. They are a sequence of characters, and JavaScript provides a variety of methods to perform operations on strings, making it easy to manipulate and process textual data.
+
+## **1. Overview of String Data Type**
+
+A string can be created using either single quotes `'`, double quotes `"`, or backticks (template literals) `` ` ``. Template literals allow for multi-line strings and expression embedding.
+
+### **Key Points:**
+- Strings are immutable in JavaScript, meaning once a string is created, it cannot be changed. However, you can create new strings from operations on existing strings.
+- You can access characters in a string by their index using bracket notation.
+
+### **Example of Creating Strings:**
+```js
+let singleQuoteString = 'Hello';
+let doubleQuoteString = "World";
+let templateLiteralString = `Hello World ${singleQuoteString}!`;
+```
+
+## **2. Common String Methods**
+
+Here is a comprehensive list of string methods provided by JavaScript:
+
+### **charAt()**
+Returns the character at the specified index.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello".charAt(1));  // Outputs: 'e'
+```
+
+### **concat()**
+Concatenates two or more strings.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello".concat(" ", "World!"));  // Outputs: 'Hello World!'
+```
+
+### **includes()**
+Determines whether one string may be found within another string.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".includes("World"));  // Outputs: true
+```
+
+### **indexOf()**
+Returns the index of the first occurrence of a specified value in a string.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".indexOf("World"));  // Outputs: 6
+```
+
+### **lastIndexOf()**
+Returns the index of the last occurrence of a specified value in a string.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World World".lastIndexOf("World"));  // Outputs: 12
+```
+
+### **match()**
+Retrieves the result of matching a string against a regular expression.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".match(/[A-Z]/g));  // Outputs: ['H', 'W']
+```
+
+### **repeat()**
+Returns a new string with a specified number of copies of the string it was called on.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello ".repeat(3));  // Outputs: 'Hello Hello Hello '
+```
+
+### **replace()**
+Replaces occurrences of a specified substring or pattern with another substring.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".replace("World", "Everyone"));  // Outputs: 'Hello Everyone'
+```
+
+### **search()**
+Executes a search for a match between a regular expression and this string.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".search("World"));  // Outputs: 6
+```
+
+### **slice()**
+Extracts a section of a string and returns it as a new string.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".slice(0, 5));  // Outputs: 'Hello'
+```
+
+### **split()**
+Splits a string into an array of strings by separating the string into substrings.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".split(" "));  // Outputs: ['Hello', 'World']
+```
+
+### **substring()**
+Returns a subset of a string between one index and another.
+
+#### **Syntax & Example:**
+```js
+console.log("Hello World".substring(0, 5));  // Outputs: 'Hello'
+```
+
+### **toLowerCase()**
+Converts a string to lowercase letters.
+
+#### **Syntax & Example:**
+```js
+console.log("HELLO WORLD".toLowerCase());  // Outputs: 'hello world'
+```
+
+### **toUpperCase()**
+Converts a string to uppercase letters.
+
+#### **Syntax & Example:**
+```js
+console.log("hello world".toUpperCase());  // Outputs: 'HELLO WORLD'
+```
+
+### **trim()**
+Trims whitespace from both ends of a string.
+
+#### **Syntax & Example:**
+```js
+console.log(" Hello World ".trim());  // Outputs: 'Hello World'
+```
+
+### **valueOf()**
+Returns the primitive value of a string object.
+
+#### **Syntax & Example:**
+```js
+console.log(new String("Hello World").valueOf());  // Outputs: 'Hello World'
+```
+
+## **3. Real-World Scenarios for Using String Methods**
+- **Form Validations:** Using `trim()` to clean input fields.
+- **URL Generation:** Using `toLowerCase()` to ensure URL uniformity.
+- **Data Parsing:** Using `split()` to parse CSV data into an array.
+- **User Input Feedback:** Using `includes()` to check if a user's input contains forbidden words.
+- **Dynamic Content Generation:** Using template literals to embed variables and expressions into strings for dynamic content.
+
+Strings are a versatile and essential data type in JavaScript, equipped with numerous methods that facilitate the manipulation and processing of textual data effectively.
+
+# **Data Types in JavaScript: Arrays**
+
+Arrays in JavaScript are used to store multiple values in a single variable. They are objects that can hold a mix of any types of values and offer a vast range of methods to manipulate these values efficiently.
+
+## **1. Overview of Array Data Type**
+
+Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. They can contain any type of value: numbers, strings, objects, or even other arrays.
+
+### **Key Points:**
+- Arrays in JavaScript are zero-indexed: the first element of the array is at index 0, and the last element is at the index equal to the value of the array's length minus one.
+- JavaScript arrays are dynamic, meaning they can grow or shrink in size dynamically.
+
+### **Example of Creating Arrays:**
+```js
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits[0]);  // Outputs: 'Apple'
+```
+
+## **2. Common Array Methods**
+
+Here's a comprehensive guide to some of the essential array methods provided by JavaScript:
+
+### **concat()**
+Merges two or more arrays.
+
+#### **Syntax & Example:**
+```js
+let vegetables = ["Carrot", "Potato"];
+let allFoods = fruits.concat(vegetables);
+console.log(allFoods);  // Outputs: ['Apple', 'Banana', 'Cherry', 'Carrot', 'Potato']
+```
+
+### **every()**
+Tests whether all elements in the array pass the test implemented by the provided function.
+
+#### **Syntax & Example:**
+```js
+let ages = [32, 33, 16, 40];
+console.log(ages.every(age => age >= 18));  // Outputs: false
+```
+
+### **filter()**
+Creates a new array with all elements that pass the test implemented by the provided function.
+
+#### **Syntax & Example:**
+```js
+let filteredAges = ages.filter(age => age >= 18);
+console.log(filteredAges);  // Outputs: [32, 33, 40]
+```
+
+### **find()**
+Returns the value of the first element in the provided array that satisfies the provided testing function.
+
+#### **Syntax & Example:**
+```js
+let found = ages.find(age => age < 20);
+console.log(found);  // Outputs: 16
+```
+
+### **forEach()**
+Executes a provided function once for each array element.
+
+#### **Syntax & Example:**
+```js
+fruits.forEach(fruit => console.log(fruit));
+```
+
+### **indexOf()**
+Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+
+#### **Syntax & Example:**
+```js
+console.log(fruits.indexOf("Banana"));  // Outputs: 1
+```
+
+### **join()**
+Joins all elements of an array into a string.
+
+#### **Syntax & Example:**
+```js
+console.log(fruits.join(", "));  // Outputs: 'Apple, Banana, Cherry'
+```
+
+### **map()**
+Creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+#### **Syntax & Example:**
+```js
+let numbers = [1, 4, 9];
+let roots = numbers.map(Math.sqrt);
+console.log(roots);  // Outputs: [1, 2, 3]
+```
+
+### **pop()**
+Removes the last element from an array and returns that element.
+
+#### **Syntax & Example:**
+```js
+let lastFruit = fruits.pop();
+console.log(lastFruit);  // Outputs: 'Cherry'
+```
+
+### **push()**
+Adds one or more elements to the end of an array and returns the new length of the array.
+
+#### **Syntax & Example:**
+```js
+let newLength = fruits.push("Mango");
+console.log(newLength);  // Outputs: 3
+console.log(fruits);  // Outputs: ['Apple', 'Banana', 'Mango']
+```
+
+### **reduce()**
+Executes a reducer function on each element of the array, resulting in a single output value.
+
+#### **Syntax & Example:**
+```js
+let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log(sum);  // Outputs: 14
+```
+
+### **reverse()**
+Reverses an array in place.
+
+#### **Syntax & Example:**
+```js
+console.log(fruits.reverse());  // Outputs: ['Mango', 'Banana', 'Apple']
+```
+
+### **slice()**
+Returns a shallow copy of a portion of an array into a new array object.
+
+#### **Syntax & Example:**
+```js
+let citrus = fruits.slice(1);
+console.log(citrus);  // Outputs: ['Banana', 'Mango']
+```
+
+### **sort()**
+Sorts the elements of an array in place and returns the array.
+
+#### **Syntax & Example:**
+```js
+console.log(fruits.sort());  // Outputs: ['Apple', 'Banana', 'Mango']
+```
+
+### **splice()**
+Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+
+#### **Syntax & Example:**
+```js
+fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruits);  // Outputs: ['Apple', 'Banana', 'Lemon', 'Kiwi', 'Mango']
+```
+
+### **unshift()**
+Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+#### **Syntax & Example:**
+```js
+let newLength = fruits.unshift("Strawberry");
+console.log(newLength);  // Outputs: 6
+console.log(fruits);  // Outputs: ['Strawberry', 'Apple', 'Banana', 'Lemon', 'Kiwi', 'Mango']
+```
+
+## **3. Real-World Scenarios for Using Array Methods**
+- **Data Processing:** Using `map()`, `filter()`, and `reduce()` for transforming, filtering, and accumulating data.
+- **UI Lists:** Using arrays to render lists in UI frameworks, with `map()` to transform data into components.
+- **Analytics:** Using `forEach()` or `reduce()` to iterate through data points and calculate statistics or aggregates.
+- **Form Inputs:** Using `push()` and `pop()` to manage stacks of input history or undo stacks in applications.
+
+Arrays are central to handling collections of data in JavaScript, and their methods provide powerful tools for data manipulation and presentation.
+
+# **Data Types in JavaScript: Objects**
+
+In JavaScript, objects are collections of properties, where a property is an association between a key (or name) and a value. A value of a property can be a function, which is then considered a method of the object. Objects in JavaScript are extremely versatile and can be used as data structures (similar to dictionaries in Python or hashes in Ruby).
+
+## **1. Overview of Object Data Type**
+
+Objects in JavaScript can be used to store structured data, serve as a building block for Object Oriented Programming, and provide dynamic behavior through methods.
+
+### **Key Points:**
+- Objects are mutable: Properties can usually be changed, properties can be added, and properties can be deleted.
+- They are used to store keyed collections of various data and more complex entities.
+- Objects can be created using literal notation or the `Object` constructor.
+
+### **Example of Creating an Object:**
+```js
+let person = {
+  name: "John Doe",
+  age: 30,
+  greet: function() {
+    console.log("Hello, " + this.name);
+  }
+};
+```
+
+## **2. Common Object Methods**
+
+JavaScript provides several built-in methods through the `Object` global constructor which are useful for dealing with objects:
+
+### **Object.keys()**
+Returns an array of a given object's own property names.
+
+#### **Syntax & Example:**
+```js
+console.log(Object.keys(person));  // Outputs: ['name', 'age', 'greet']
+```
+
+### **Object.values()**
+Returns an array of a given object's own enumerable property values.
+
+#### **Syntax & Example:**
+```js
+console.log(Object.values(person));  // Outputs: ['John Doe', 30, f]
+```
+
+### **Object.entries()**
+Returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
+
+#### **Syntax & Example:**
+```js
+console.log(Object.entries(person));  // Outputs: [['name', 'John Doe'], ['age', 30], ['greet', f]]
+```
+
+### **Object.assign()**
+Copies all enumerable own properties from one or more source objects to a target object.
+
+#### **Syntax & Example:**
+```js
+let additionalInfo = { gender: "male", occupation: "engineer" };
+Object.assign(person, additionalInfo);
+console.log(person);
+```
+
+### **Object.freeze()**
+Freezes an object: other code cannot delete or change any properties.
+
+#### **Syntax & Example:**
+```js
+Object.freeze(person);
+person.name = "Jane Doe";  // This will not change the name because the object is frozen.
+console.log(person.name);  // Outputs: 'John Doe'
+```
+
+### **Object.seal()**
+Prevents new properties from being added to an object and marks all existing properties as non-configurable.
+
+#### **Syntax & Example:**
+```js
+Object.seal(person);
+person.age = 35;  // This will change the age.
+delete person.gender;  // This will not work because the object is sealed.
+console.log(person);
+```
+
+### **Object.hasOwnProperty()**
+Determines whether an object has a property with the specified name.
+
+#### **Syntax & Example:**
+```js
+console.log(person.hasOwnProperty('name'));  // Outputs: true
+```
+
+## **3. Accessing Properties**
+You can access properties of an object using the dot notation or square bracket notation:
+
+### **Dot Notation:**
+```js
+console.log(person.name);  // Outputs: 'John Doe'
+```
+
+### **Bracket Notation:**
+```js
+console.log(person['age']);  // Outputs: 30
+```
+
+## **4. Real-World Scenarios for Using Objects**
+- **Configuration Objects:** Storing and managing configurations for applications.
+- **Models in MVC Frameworks:** Representing data structures in model components of MVC (Model-View-Controller) frameworks.
+- **Options for Functions/Methods:** Functions can accept a single object containing named parameters.
+- **JSON Data:** JavaScript Object Notation (JSON) is a common data exchange format closely associated with JavaScript objects.
+
+Objects are a foundational element in JavaScript, providing a powerful toolset for creating structured, interactive applications. They can hold various types of data and functions, allowing for flexible and dynamic programming approaches.
+
+
+# **Data Types in JavaScript: Dates**
+
+In JavaScript, the `Date` object is used to work with dates and times. It's part of the built-in object types that JavaScript provides to handle the complexity of date and time operations.
+
+## **1. Overview of Date Data Type**
+
+The `Date` object is used for all types of calendar and clock-related tasks. It can be created to represent a specific point in time, manipulated, and formatted to various locale-specific outputs.
+
+### **Key Points:**
+- Dates are created using the `Date` constructor.
+- The JavaScript `Date` object provides methods to perform various operations like getting, setting, and manipulating dates and times.
+- Dates in JavaScript are stored as the number of milliseconds since the Unix Epoch (January 1, 1970, UTC).
+
+### **Example of Creating Dates:**
+```js
+let now = new Date();
+console.log(now);  // Outputs current date and time
+
+let specificDate = new Date(2023, 0, 1);  // January 1, 2023
+console.log(specificDate);  // Outputs: 2023-01-01T00:00:00.000Z
+```
+
+## **2. Common Date Methods**
+
+Here are several useful methods provided by the `Date` object:
+
+### **getDate() / setDate()**
+Gets or sets the day of the month.
+
+#### **Syntax & Example:**
+```js
+console.log(now.getDate());  // Outputs: day of the month
+now.setDate(15);
+console.log(now);  // Sets the day to the 15th
+```
+
+### **getMonth() / setMonth()**
+Gets or sets the month.
+
+#### **Syntax & Example:**
+```js
+console.log(now.getMonth());  // Outputs: month (0-11)
+now.setMonth(11);  // Sets month to December (0 indexed)
+```
+
+### **getFullYear() / setFullYear()**
+Gets or sets the year.
+
+#### **Syntax & Example:**
+```js
+console.log(now.getFullYear());  // Outputs: year
+now.setFullYear(2024);
+```
+
+### **getHours() / setHours()**
+Gets or sets the hours.
+
+#### **Syntax & Example:**
+```js
+console.log(now.getHours());  // Outputs: hours
+now.setHours(20);
+```
+
+### **getTime() / setTime()**
+Gets or sets the time (milliseconds since January 1, 1970).
+
+#### **Syntax & Example:**
+```js
+console.log(now.getTime());  // Outputs: milliseconds
+now.setTime(1672531200000);  // Sets a specific time
+```
+
+### **getDay()**
+Gets the day of the week.
+
+#### **Syntax & Example:**
+```js
+console.log(now.getDay());  // Outputs: day of the week (0-6, where 0 is Sunday)
+```
+
+### **toLocaleString()**
+Converts a date and time to a string, using locale conventions.
+
+#### **Syntax & Example:**
+```js
+console.log(now.toLocaleString());  // Outputs: date and time in local format
+```
+
+### **toUTCString()**
+Converts a date to a UTC string.
+
+#### **Syntax & Example:**
+```js
+console.log(now.toUTCString());  // Outputs: date and time in UTC format
+```
+
+### **getTimezoneOffset()**
+Returns the time-zone offset from UTC, in minutes, for the current locale.
+
+#### **Syntax & Example:**
+```js
+console.log(now.getTimezoneOffset());  // Outputs: timezone offset in minutes
+```
+
+## **3. Real-World Scenarios for Using Dates**
+- **Event Scheduling:** Handling dates and times for events in calendars.
+- **Logs and Timestamps:** Recording times of events in logging systems.
+- **Age Verification:** Calculating age from birthdates.
+- **Timezone Conversions:** Managing display of times for users in different time zones.
+- **Countdowns and Timers:** Implementing countdowns or measuring durations.
+
+## **4. Advanced Date Manipulation**
+For more complex date manipulations (like adding days or calculating differences between dates), JavaScript developers often use libraries like `date-fns` or `Moment.js` to simplify these tasks, although many are moving towards `date-fns` due to its modular approach.
+
+The `Date` object in JavaScript provides a comprehensive set of methods for creating, modifying, and formatting dates, making it suitable for a wide array of applications dealing with time-sensitive data.
+
+
+# **Other Essential Data Types in JavaScript**
+
+In addition to the primary data types like numbers, strings, booleans, objects, and dates, JavaScript offers several other useful data structures and types such as `Set`, `Map`, `Symbol`, and regular expressions. Each of these types serves specific purposes in web development, enhancing JavaScript's flexibility and utility.
+
+## **1. Set**
+
+A `Set` is a collection of values where each value may occur only once; it's particularly useful for ensuring all elements are unique and for fast access and removals.
+
+### **Key Points:**
+- Unlike arrays, `Set` does not allow duplicate values.
+- Values in a `Set` can be iterated in the order of their insertion.
+
+### **Example of Using Set:**
+```js
+let mySet = new Set([1, 2, 3, 4, 4, 4]);
+console.log(mySet);  // Outputs: Set {1, 2, 3, 4}
+
+// Adding items
+mySet.add(5);
+
+// Checking for existence
+console.log(mySet.has(3));  // true
+
+// Size of the Set
+console.log(mySet.size);  // 5
+
+// Deleting an item
+mySet.delete(2);
+
+// Iterating over Set
+mySet.forEach(value => {
+  console.log(value);
+});
+```
+
+## **2. Map**
+
+`Map` is a collection of keyed data items, similar to an Object. However, it allows keys of any type and maintains the order of insertion.
+
+### **Key Points:**
+- Maps are ideal for scenarios where key-value pairs are frequently added or removed.
+- Maps remember the original insertion order of the keys.
+
+### **Example of Using Map:**
+```js
+let myMap = new Map();
+
+// Setting the values
+myMap.set('key1', 'value1');
+myMap.set('key2', 'value2');
+
+// Getting a value by key
+console.log(myMap.get('key1'));  // 'value1'
+
+// Checking existence
+console.log(myMap.has('key2'));  // true
+
+// Size of the Map
+console.log(myMap.size);  // 2
+
+// Iterating over Map
+for (let [key, value] of myMap) {
+  console.log(key + ': ' + value);
+}
+```
+
+## **3. Symbol**
+
+Symbols are a new primitive type introduced in ES6. They are unique and immutable, used primarily as keys for object properties to avoid naming collisions.
+
+### **Key Points:**
+- Each `Symbol()` call returns a unique symbol, ensuring property keys are unique.
+- Symbols are often used to add unique property keys to objects that do not collide with any other properties, commonly used for metadata or to hide implementation details.
+
+### **Example of Using Symbol:**
+```js
+let sym1 = Symbol('symbol1');
+let sym2 = Symbol('symbol1');
+
+console.log(sym1 === sym2);  // false
+
+let obj = {
+  [sym1]: 'metadata1'
+};
+
+console.log(obj[sym1]);  // 'metadata1'
+```
+
+## **4. Regular Expressions (Regex)**
+
+Regular expressions are patterns used to match character combinations in strings. They are a powerful tool for performing complex text searches and replacements.
+
+### **Key Points:**
+- Useful for validating text formats like emails and phone numbers, and for searching and replacing text patterns.
+- JavaScript's `RegExp` object is a representation of regular expressions.
+
+### **Example of Using Regex:**
+```js
+let text = "The quick brown fox jumps over the lazy dog.";
+let regex = /quick/;
+
+// Testing if 'quick' is in our text
+console.log(regex.test(text));  // true
+
+// Replacing 'quick' with 'slow'
+let newText = text.replace(regex, 'slow');
+console.log(newText);  // "The slow brown fox jumps over the lazy dog."
+```
+
+Each of these data types and structures has specific use cases in JavaScript. They enable more effective and efficient data manipulation, storage, and retrieval, catering to various complex scenarios encountered in modern web development.

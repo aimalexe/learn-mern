@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4</title>
+</head>
+
+<body>
+    <h2>Lecture: Loops, Control Statements, and Error Handling</h2>
+
+    <h3>do...while Loop</h3>
+    <p>The <code>do...while</code> loop executes the block of code at least once before checking the condition.</p>
+
+    <script type="text/javascript">
+        let i = 0;
+        do {
+            console.log("Do while example, i =", i);
+            i++;
+        } while (i < 5);
+    </script>
+
+    <h3>for...of Loop</h3>
+    <p>The <code>for...of</code> loop iterates over iterable objects like arrays and strings.</p>
+
+    <script type="text/javascript">
+        const colors = ["red", "green", "blue"];
+        for (let color of colors) {
+            console.log("Color:", color);
+        }
+    </script>
+
+    <h3>for...in Loop</h3>
+    <p>The <code>for...in</code> loop iterates over object keys or array indices.</p>
+
+    <script type="text/javascript">
+        const person = { name: "Alice", age: 25, city: "New York" };
+        for (let key in person) {
+            console.log(`${key}: ${person[key]}`);
+        }
+    </script>
+
+    <h3>Control Statements: break and continue</h3>
+    <p>Control flow statements like <code>break</code> and <code>continue</code> allow you to modify the behavior of loops.</p>
+
+    <h4>break Statement</h4>
+    <script type="text/javascript">
+        for (let i = 0; i < 10; i++) {
+            if (i === 5) break;
+            console.log("Break example, i =", i);
+        }
+    </script>
+
+    <h4>continue Statement</h4>
+    <script type="text/javascript">
+        for (let i = 0; i < 5; i++) {
+            if (i === 2) continue;
+            console.log("Continue example, i =", i);
+        }
+    </script>
+
+    <h3>Timeouts and Intervals</h3>
+
+    <h4>setTimeout()</h4>
+    <p>Run a function after a specified delay using <code>setTimeout</code>.</p>
+
+    <script type="text/javascript">
+        setTimeout(() => {
+            console.log("This message appears after 2 seconds.");
+        }, 2000);
+    </script>
+
+    <h4>setInterval()</h4>
+    <p>Use <code>setInterval</code> to run a function repeatedly at specified intervals.</p>
+
+    <script type="text/javascript">
+        let count = 0;
+        const intervalID = setInterval(() => {
+            count++;
+            console.log("Interval count:", count);
+            if (count === 5) clearInterval(intervalID); // Stop the interval after 5 iterations
+        }, 1000);
+    </script>
+
+    <h3>Exception Handling: try, catch, finally, and throw</h3>
+
+    <h4>try...catch</h4>
+    <p>The <code>try...catch</code> block allows you to catch errors and handle them gracefully.</p>
+
+    <script type="text/javascript">
+        try {
+            let result = 10 / 0;
+            console.log(result);
+        } catch (error) {
+            console.log("Error caught:", error.message);
+        }
+    </script>
+
+    <h4>finally</h4>
+    <p>The <code>finally</code> block always runs, regardless of whether an error occurred or not.</p>
+
+    <script type="text/javascript">
+        try {
+            let x = 10 / 0;
+        } catch (error) {
+            console.log("Error:", error.message);
+        } finally {
+            console.log("Finally block executed.");
+        }
+    </script>
+
+    <h4>throw Statement</h4>
+    <p>You can create custom errors using the <code>throw</code> statement.</p>
+
+    <script type="text/javascript">
+        let age = -5;
+        try {
+            if (age < 0) throw new Error("Age cannot be negative.");
+        } catch (error) {
+            console.log("Custom error:", error.message);
+        }
+    </script>
+
+    <hr>
+
+    <h3>Task for Students</h3>
+    <p>Now it's your turn! Implement the following tasks in JavaScript:</p>
+    <ol>
+        <li>Use a <strong>do...while</strong> loop to print numbers from 10 to 0.</li>
+        <li>Create an array of fruits and use a <strong>for...of</strong> loop to print each fruit.</li>
+        <li>Create an object with properties for your name, age, and favorite hobby. Use a <strong>for...in</strong> loop to print both the keys and their values.</li>
+        <li>Write a <strong>for</strong> loop that breaks when it reaches 7.</li>
+        <li>Write a <strong>for</strong> loop that skips over the number 3 using <strong>continue</strong>.</li>
+        <li>Use <strong>setTimeout()</strong> to log a message after 3 seconds.</li>
+        <li>Use <strong>setInterval()</strong> to count from 1 to 5, then stop the interval.</li>
+        <li>Write a <strong>try...catch</strong> block that catches a division by zero error.</li>
+        <li>Create a custom error using <strong>throw</strong> and catch it in a <strong>try...catch</strong> block.</li>
+    </ol>
+</body>
+
+</html>
