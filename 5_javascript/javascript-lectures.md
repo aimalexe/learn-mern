@@ -131,7 +131,7 @@ Before learning JavaScript, students should have:
     - [**C. `throw` Statement**](#c-throw-statement)
       - [**Syntax:**](#syntax-12)
       - [**Example:**](#example-20)
-- [**Day -: Functions in JavaScript**](#day---functions-in-javascript)
+- [**Day 5: Functions in JavaScript**](#day-5-functions-in-javascript)
   - [**1. Function Declarations**](#1-function-declarations)
     - [**Syntax:**](#syntax-13)
     - [**Example:**](#example-21)
@@ -173,7 +173,7 @@ Before learning JavaScript, students should have:
     - [**Uses:**](#uses-2)
   - [**12. Arrow Functions and `this` Binding**](#12-arrow-functions-and-this-binding)
         - [**Example:**](#example-31)
-- [**Data Types in JavaScript: Numbers**](#data-types-in-javascript-numbers)
+- [**Day 6:- Data Types in JavaScript: Numbers**](#day-6--data-types-in-javascript-numbers)
   - [**1. Overview of Number Data Type**](#1-overview-of-number-data-type)
     - [**Key Points:**](#key-points-2)
     - [**Examples of Number Declarations:**](#examples-of-number-declarations)
@@ -1091,7 +1091,7 @@ try {
 ```
 
 
-# **Day -: Functions in JavaScript**
+# **Day 5: Functions in JavaScript**
 
 In JavaScript, functions are one of the most important and versatile features, allowing code to be organized into reusable blocks. This lecture will cover all types of functions, their syntax, use cases, and nuances.
 
@@ -1341,7 +1341,7 @@ const person = {
 person.showActions();
 ```
 
-# **Data Types in JavaScript: Numbers**
+# **Day 6:- Data Types in JavaScript: Numbers**
 
 JavaScript provides a flexible and powerful way to work with numerical data through its `Number` data type. This includes integers, floating-point numbers, and even special numeric values like `Infinity` and `NaN` (Not-a-Number).
 
