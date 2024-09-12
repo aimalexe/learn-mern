@@ -251,7 +251,7 @@ Before learning JavaScript, students should have:
     - [**valueOf()**](#valueof)
       - [**Syntax \& Example:**](#syntax--example-23)
   - [**3. Real-World Scenarios for Using String Methods**](#3-real-world-scenarios-for-using-string-methods)
-- [**Data Types in JavaScript: Arrays**](#data-types-in-javascript-arrays)
+- [**Day 7:- Data Types in JavaScript: Arrays**](#day-7--data-types-in-javascript-arrays)
   - [**1. Overview of Array Data Type**](#1-overview-of-array-data-type)
     - [**Key Points:**](#key-points-5)
     - [**Example of Creating Arrays:**](#example-of-creating-arrays)
@@ -1701,7 +1701,7 @@ console.log(new String("Hello World").valueOf());  // Outputs: 'Hello World'
 
 Strings are a versatile and essential data type in JavaScript, equipped with numerous methods that facilitate the manipulation and processing of textual data effectively.
 
-# **Data Types in JavaScript: Arrays**
+# **Day 7:- Data Types in JavaScript: Arrays**
 
 Arrays in JavaScript are used to store multiple values in a single variable. They are objects that can hold a mix of any types of values and offer a vast range of methods to manipulate these values efficiently.
 
