@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 6th</title>
+</head>
+<body>
+    <h2>Lecture 6: </h2>
+    <h1>Numbers, Booleans and Strings in JS</h1>
+
+
+    <script>
+        // Numbers
+        let oneM = 0b1_000_000;
+        console.log(oneM);
+        console.log(1/0, Infinity + oneM);
+        console.log(Number.parseInt("10abc"));
+        console.log(Number.isFinite(1/0))
+        console.log(Number.isNaN(10));
+        let result = 0.1 + 0.2;
+        console.log(result.toFixed(3))
+
+        // Booleans
+        console.log(Boolean(NaN))
+        console.log(!!"helo")
+
+        // Strings
+        let myStr = "Lorem dol, or sit do, lor amet 134, 56";
+        console.log(myStr.charAt(6))
+        console.log(myStr + " " + "consecture" + " "+ "sloba uljang")
+        console.log(myStr.lastIndexOf(" dolo"));
+        console.log(myStr.match(/\d/ig));
+        console.log(myStr.repeat(3));
+        console.log(myStr.replace(/dolor/ig, "another"));
+        console.log(myStr.slice(6, -11));
+        console.log(myStr.split(","))
+        console.log(myStr.substring(6, 11))
+        console.log(myStr.trim());
+        console.log(myStr.toLowerCase());
+        console.log(myStr.toUpperCase());
+    </script>
+</body>
+</html>
