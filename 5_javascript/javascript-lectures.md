@@ -289,7 +289,7 @@ Before learning JavaScript, students should have:
     - [**unshift()**](#unshift)
       - [**Syntax \& Example:**](#syntax--example-39)
   - [**3. Real-World Scenarios for Using Array Methods**](#3-real-world-scenarios-for-using-array-methods)
-- [**Data Types in JavaScript: Objects**](#data-types-in-javascript-objects)
+- [**Day 8:- Data Types in JavaScript: Objects**](#day-8--data-types-in-javascript-objects)
   - [**1. Overview of Object Data Type**](#1-overview-of-object-data-type)
     - [**Key Points:**](#key-points-6)
     - [**Example of Creating an Object:**](#example-of-creating-an-object)
@@ -1874,7 +1874,7 @@ console.log(fruits);  // Outputs: ['Strawberry', 'Apple', 'Banana', 'Lemon', 'Ki
 
 Arrays are central to handling collections of data in JavaScript, and their methods provide powerful tools for data manipulation and presentation.
 
-# **Data Types in JavaScript: Objects**
+# **Day 8:- Data Types in JavaScript: Objects**
 
 In JavaScript, objects are collections of properties, where a property is an association between a key (or name) and a value. A value of a property can be a function, which is then considered a method of the object. Objects in JavaScript are extremely versatile and can be used as data structures (similar to dictionaries in Python or hashes in Ruby).
 

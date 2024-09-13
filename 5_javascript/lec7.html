@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let ages = [32, 33, 16, 40, 33, 16, 40];
+        let vegetables = ["Carrot", "Potato", "Onions", "Spinach"];
+        let fruits = ["Apple", "Banana", "Cherry", "Grapes", "Anar"];
+
+        console.log(vegetables.concat(fruits).concat(ages))
+        console.log(fruits.every(fruit => fruit.startsWith("A")))
+        console.log(fruits.filter(fruit => fruit.startsWith("A")))
+        console.log(vegetables.find(veg => veg.startsWith("Oz")))
+
+        ages.forEach(age => console.log("age is: ", age));
+        //for of  or for in
+
+        console.log(fruits.indexOf("Anarzzz"));
+        console.log(vegetables.join(" - "));
+
+        console.log(ages.map((a, i) => a - i * 2));
+        const lastFruit = fruits.pop();
+        console.log(lastFruit,"->>>", fruits);
+
+        const idx = vegetables.push("Tomato")
+        console.log(idx, "->>>>", vegetables);
+
+        console.log(ages.reduce((sum, val) => sum + val, 0));
+
+        let slice = vegetables.slice(0, 2);
+        console.log(slice)
+
+        console.log(ages.splice(3, 2, 23, 34, 51, 60));
+        console.log(ages)
+
+        console.log(ages.sort((a, b) => b - a));
+    </script>
+</body>
+
+</html>
