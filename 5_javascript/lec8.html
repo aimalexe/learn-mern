@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 8</title>
+</head>
+
+<body>
+    <h2>Lecture 8: </h2>
+    <h1>Objects in JS</h1>
+
+    <script>
+        const smartHomeDevice = {
+            // Primitive Data Types
+            deviceName: "Smart Thermostat",          // String
+            isOnline: true,                          // Boolean
+            currentTemperature: 72,                  // Number
+            targetTemperature: null,                 // Null
+            lastError: undefined,                    // Undefined
+            deviceId: Symbol("deviceId"),            // Symbol
+            maxTemperature: BigInt(120),             // BigInt
+
+            // Nested Object
+            settings: {
+                mode: "auto",
+                fanSpeed: "medium",
+                schedules: [
+                    { day: "Monday", temperature: 70 },
+                    { day: "Tuesday", temperature: 68 },
+                ],
+            },
+
+            // Methods (Functions)
+            turnOn: function () {
+                this.isOnline = true;
+                console.log(`${this.deviceName} is now online.`);
+            },
+
+            turnOff() {
+                this.isOnline = false;
+                console.log(`${this.deviceName} is now offline.`);
+            },
+
+            setTemperature(newTemp) {
+                if (typeof newTemp === "number") {
+                    this.targetTemperature = newTemp;
+                    console.log(`Target temperature set to ${newTemp}°C.`);
+                } else {
+                    console.log("Please provide a valid number for the temperature.");
+                }
+            },
+
+            // Additional Object (Array is an object)
+            supportedModes: ["auto", "cool", "heat", "fan"],
+
+            // Method using BigInt
+            increaseMaxTemperature(amount) {
+                this.maxTemperature += BigInt(amount);
+                console.log(`Max temperature increased to ${this.maxTemperature}°C.`);
+            },
+        };
+
+        const smartphone = {
+            brand: "TechBrand",             // String
+            model: "X1000",                 // String
+            price: 799.99,                  // Number
+            isAvailable: true,              // Boolean
+            warranty: null,                 // Null
+            serialNumber: undefined,        // Undefined
+            bigBatteryCapacity: 5000n,      // BigInt
+            uniqueID: Symbol("smartphone"), // Symbol
+            specifications: {               // Nested Object
+                dimensions: {
+                    height: 150, // in mm
+                    width: 70,
+                    depth: 8,
+                },
+                weight: 180,   // in grams
+                processor: "Octa-core",
+                storageOptions: [64, 128, 256], // Array within Object
+            },
+            accessories: ["Charger", "Earphones"], // Array
+            calculateDiscountedPrice: function (discountPercentage) { // Method
+                return this.price - (this.price * (discountPercentage / 100));
+            },
+            getFullSpecification: function () { // Method
+                return `${this.brand} ${this.model} with ${this.specifications.processor} processor and up to ${this.specifications.storageOptions[this.specifications.storageOptions.length - 1]}GB storage.`;
+            },
+        };
+
+
+        const keys = Object.keys(smartHomeDevice.settings);
+        const values = Object.values(smartphone.specifications);
+        const entries = Object.entries(smartphone.specifications.dimensions);
+        let bothObjects = {};
+        Object.assign(bothObjects, smartHomeDevice);
+        Object.assign(bothObjects, smartphone);
+
+        Object.seal(smartphone.specifications);
+        delete smartphone.specifications.weight;
+        smartphone.specifications.storageOptions[1] = 512;
+        
+
+        const isPresent = smartHomeDevice.hasOwnProperty('deviceName');
+        console.log(isPresent);
+        const spec = 'specifications';
+        console.log(smartphone[spec]['storageOptions'][2]);
+
+    </script>
+</body>
+
+</html>
