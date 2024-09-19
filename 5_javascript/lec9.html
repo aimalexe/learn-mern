@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 9</title>
+</head>
+
+<body>
+    <h2>Lecture 9: </h2>
+    <h1>Dates in JS</h1>
+
+    <script>
+        const now = new Date();
+        console.log("🚀 ~ now:", now);
+
+        const past = new Date("2022-3-1");
+        console.log("🚀 ~ past:", past);
+        
+        const date1 = now.getDate();
+        console.log("🚀 ~ date:", date1);
+        
+        const date2 = past.setDate(23);
+        console.log("🚀 ~ date2:", date2)
+        console.log("🚀 ~ past:", past);
+        
+        const m1 = now.getMonth();
+        console.log("🚀 ~ m1:", m1);
+        
+        const year = past.setFullYear(2019);
+        console.log("🚀 ~ past:", past);
+        console.log("🚀 ~ year:", year)
+
+        console.log(now.getHours());
+        console.log(now.getDay());
+
+        console.log(now.toLocaleString());
+        console.log(now.toUTCString());
+        console.log(now.getTimezoneOffset());
+        
+
+
+        
+
+    </script>
+</body>
+
+</html>
